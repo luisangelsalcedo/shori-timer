@@ -19,6 +19,16 @@ interface.style.borderRadius = ".5rem"
 const body = document.querySelector("body");
 body.append(interface)
 
+const setTMO = (tmo) => {
+    console.log(tmo)
+}
+
+config.forEach(({label, tmo}) => {
+    const button = document.createElement("button");    
+    button.textContent = label;
+    button.addEventListener("click", () => setTMO(tmo));
+    interface.append(button);
+});
 
 
 // //////////////////////////////////////////////////////////////
