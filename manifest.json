@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Temporizador Botón",
+  "version": "1.0",
+  "description": "Muestra un temporizador al hacer clic en el icono",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_title": "Mostrar temporizador"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
