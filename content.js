@@ -2,6 +2,27 @@
 const TMO = 30;
 const LIMIT = 1;
 
+const config = [
+    {label:"15 minutos", tmo : 15},
+    {label:"20 minutos", tmo : 20},
+    {label:"25 minutos", tmo : 25},
+]
+
+const interface = document.createElement("div");
+interface.style.backgroundColor = "#ddd";
+interface.style.width = "160px";
+interface.style.height = "160px";
+interface.style.position = "absolute";
+interface.style.inset = "1rem 1rem auto auto";
+interface.style.borderRadius = ".5rem"
+
+const body = document.querySelector("body");
+body.append(interface)
+
+
+
+// //////////////////////////////////////////////////////////////
+
 
 const header = document.querySelector(".chakra-heading");
 header.style.display = "flex";
