@@ -1,0 +1,54 @@
+export const tmos = [
+    {
+        "label" : "Generar Informe MKT y Expenses", 
+        "tmo" : 40
+    },
+    {
+        "label" : "Generar Informe ARQ Demandas", 
+        "tmo" : 40
+    },
+    {
+        "label" : "Extraer REAL vs FCST", 
+        "tmo" : 20
+    },
+    {
+        "label" : "Generar Informe Billing & Collection", 
+        "tmo" : 40
+    },
+    {
+        "label" : "Atender Consulta (Mail-Call-Chat)", 
+        "tmo" : 30
+    },
+    {
+        "label" : "Reunión de Seguimiento con Oficina", 
+        "tmo" : 30
+    },
+    {
+        "label" : "Actualizar Plan de Facturación", 
+        "tmo" : 15
+    },
+    {
+        "label" : "Generar Evento & Correo Complejo", 
+        "tmo" : 40
+    },
+    {
+        "label" : "Generar Evento & Correo Simple", 
+        "tmo" : 20
+    },
+    {
+        "label" : "Validar y Archivar PDF", 
+        "tmo" : 10
+    },
+    {
+        "label" : "Generar Informe Pending Collection ", 
+        "tmo" : 40
+    },
+    {
+        "label" : "Actualizar SOW", 
+        "tmo" : 20
+    },
+    {
+        "label" : "Inicio", 
+        "tmo" : 0.5
+    }
+]
