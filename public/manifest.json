@@ -4,10 +4,22 @@
   "version": "1.0",
   "description": "Muestra un temporizador al hacer clic en el icono",
   "permissions": ["scripting", "activeTab"],
+  "icons": {
+    "128": "icon.png"
+  },
   "action": {
-    "default_title": "Mostrar temporizador"
+    "default_icon": {
+      "128": "icon.png"
+    },
+    "default_title": "Reloj Shori"
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["alarma.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

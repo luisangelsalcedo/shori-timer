@@ -40,7 +40,7 @@ export const tmos = [
         "tmo" : 10
     },
     {
-        "label" : "Generar Informe Pending Collection ", 
+        "label" : "Generar Informe Pending Collection", 
         "tmo" : 40
     },
     {
