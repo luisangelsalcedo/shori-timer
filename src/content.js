@@ -1,7 +1,7 @@
 import "./assets/styles.css";
 import { $, timeFormat } from "./utils";
 import { tmos } from "./data";
-import { divTimer, divTimerContent, btnRefreshTimer } from "./elements";
+import { divTimer, divTimerContent, divTimerBottom , btnRefreshTimer } from "./elements";
 
 if (window.__myTimerLoaded) {
   console.log("Timer ya cargado");
@@ -89,7 +89,6 @@ if (window.__myTimerLoaded) {
         // const url = runtime.runtime.getURL("tmos.json");
         // const response = await fetch(url);
         // return await response.json();
-
         return tmos
       } catch (error) {
         console.error("Error cargando tmos.json:", error);

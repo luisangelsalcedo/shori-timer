@@ -22,7 +22,7 @@ divTimerTop.style.justifyContent = "center";
 divTimerTop.style.gap = "10px";
 
 
-const divTimerBottom = document.createElement("div");
+export const divTimerBottom = document.createElement("div");
 divTimerBottom.style.fontSize = "11px";
 divTimerBottom.style.whiteSpace = "nowrap";
 divTimerBottom.style.overflow = "hidden";
