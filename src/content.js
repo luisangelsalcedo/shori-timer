@@ -1,6 +1,7 @@
 import "./assets/styles.css";
-import {$, timeFormat} from "./utils";
-import {tmos} from "./data";
+import { $, timeFormat } from "./utils";
+import { tmos } from "./data";
+import { divTimer, divTimerContent, btnRefreshTimer } from "./elements";
 
 if (window.__myTimerLoaded) {
   console.log("Timer ya cargado");
@@ -69,45 +70,10 @@ if (window.__myTimerLoaded) {
     
 
     // make container
-    const divTimer = document.createElement("div");
     
-    divTimer.style.position = "absolute";
-    divTimer.style.backgroundColor = "white";
-    divTimer.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, .2)";
-    divTimer.style.top = "100%";
-    divTimer.style.right = "1rem";
-    divTimer.style.padding = ".5rem 1rem";
-    divTimer.style.fontSize = "1.3rem";
-    divTimer.style.borderRadius = "0 0 8px 8px";
-
-    const imageTimer = `<svg width="800px" height="800px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gis" preserveAspectRatio="xMidYMid meet"><path d="M42 0a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h3v5.295C23.364 15.785 6.5 34.209 6.5 56.5C6.5 80.483 26.017 100 50 100s43.5-19.517 43.5-43.5a43.22 43.22 0 0 0-6.72-23.182l4.238-3.431l1.888 2.332a2 2 0 0 0 2.813.297l3.11-2.518a2 2 0 0 0 .294-2.812L89.055 14.75a2 2 0 0 0-2.813-.297l-3.11 2.518a2 2 0 0 0-.294 2.812l1.889 2.332l-4.22 3.414C73.77 18.891 64.883 14.435 55 13.297V8h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H42zm8 20c20.2 0 36.5 16.3 36.5 36.5S70.2 93 50 93S13.5 76.7 13.5 56.5S29.8 20 50 20zm.002 7.443L50 56.5l23.234 17.447a29.056 29.056 0 0 0 2.758-30.433a29.056 29.056 0 0 0-25.99-16.07z" fill="#000000"></path></svg>`;
-    const divTimerContent = document.createElement("div");
-    divTimerContent.style.color = "BLUE";
-    divTimerContent.style.fontWeight = "bold";
-
-    const divTimerTop = document.createElement("div");
-    divTimerTop.style.display = "flex";
-    divTimerTop.style.alignItems = "center";
-    divTimerTop.style.justifyContent = "center";
-    divTimerTop.style.gap = "10px";
-
-    const divTimerBottom = document.createElement("div");
-    divTimerBottom.style.fontSize = "11px";
-    divTimerBottom.style.whiteSpace = "nowrap";
-    divTimerBottom.style.overflow = "hidden";
-    divTimerBottom.style.textOverflow = "ellipsis";
-    divTimerBottom.style.width = "100px";  
-    divTimerBottom.style.textAlign = "center";
     
-    divTimerTop.innerHTML = imageTimer; 
-    divTimerTop.append(divTimerContent)
-    divTimer.append(divTimerTop);
-    divTimer.append(divTimerBottom);
 
-    const svgtime = divTimerTop.querySelector("svg");
-    svgtime.style.width = "16px";
-    svgtime.style.height = "16px";
-    svgtime.querySelector("path").style.fill = "#005b96"
+    
 
     // const divHeader = $(".chakra-heading");
     const divHeader = $(".css-9x4cwg");
@@ -233,11 +199,7 @@ if (window.__myTimerLoaded) {
         }, 1000);
     }
 
-    //btn refresh
-    const btnRefreshTimer = document.createElement("button");
-    btnRefreshTimer.innerText = "Reload";
-    btnRefreshTimer.style.color = "white";
-    btnRefreshTimer.style.padding = "5px";
+    //btn refresh    
     btnRefreshTimer.addEventListener('click', loadTimer)
     divHeader.append(btnRefreshTimer)
 
