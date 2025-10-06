@@ -7,6 +7,7 @@ divTimer.style.right = "1rem";
 divTimer.style.padding = ".5rem 1rem";
 divTimer.style.fontSize = "1.3rem";
 divTimer.style.borderRadius = "0 0 8px 8px";
+divTimer.style.display = "none";
 
 
 
@@ -35,7 +36,7 @@ const imageTimer = `<svg width="800px" height="800px" viewBox="0 0 100 100" xmln
 divTimerTop.innerHTML = imageTimer; 
 divTimerTop.append(divTimerContent)
 divTimer.append(divTimerTop);
-divTimer.append(divTimerBottom);
+
 
 
 const svgtime = divTimerTop.querySelector("svg");

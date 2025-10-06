@@ -11,67 +11,39 @@ if (window.__myTimerLoaded) {
   (async () => {
     let timer = null;
     const currentLimit = 1;
+    let alarmPlayed = false;
+
+    divTimer.append(divTimerBottom);
     
-    // // ------------ sound api 
-    // let audioCtx = null;
-    // let oscillator = null;
-    // let gainNode = null;
+    // -------------------------------
 
-    // function playSound(duration = 3000) {
-    //     const audioUrl = chrome.runtime.getURL("assets/alarma.mp3");
-        
-    //     // crear un elemento audio invisible en la página
-    //     const audio = document.createElement("audio");
-    //     audio.src = audioUrl;
-    //     audio.autoplay = true;
-    //     audio.volume = 1;
-    //     audio.style.display = "none";
-    //     document.body.appendChild(audio);
+    let currentAudio = null;
 
-    //     // detener después de X ms
-    //     setTimeout(() => {
-    //         audio.pause();
-    //         audio.currentTime = 0;
-    //         document.body.removeChild(audio);
-    //     }, duration);
-    // }
+    function playAudio(audio, duration = 3000){
+      stopAlarm();
+      currentAudio = new Audio(audio);
+      currentAudio.autoplay = true;
+      currentAudio.play().catch(err => console.error("Error al reproducir audio:", err));
+      setTimeout(() => stopAlarm(), duration);
+    }
 
-    // function stopBeep() {
-    //     if (oscillator) {
-    //         oscillator.stop();
-    //         oscillator.disconnect();
-    //         oscillator = null;
-    //     }
-    //     if (gainNode) {
-    //         gainNode.disconnect();
-    //         gainNode = null;
-    //     }
-    //     if (audioCtx) {
-    //         audioCtx.close();
-    //         audioCtx = null;
-    //     }
-    // }
-    // // ------------ end sound api 
-    // function playSound(duration = 3000) {
-    //     const url = chrome.runtime.getURL("assets/sound.mp3");
-    //     const audio = new Audio(url);
-    //     audio.play().catch(err => console.error("Error al reproducir audio:", err));
+    function playAlarm1(duration = 3000) {
+      playAudio("https://www.sonidosmp3gratis.com/sounds/mario.mp3", duration);      
+    }
 
-    //     // detener automáticamente después de X ms
-    //     setTimeout(() => {
-    //         audio.pause();
-    //         audio.currentTime = 0;
-    //     }, duration);
-    // }
-    // function notifySound() {
-    // chrome.runtime.sendMessage({ action: "playSound", duration: 3000 });
-    // }
+    function playAlarm2(duration = 3000) {
+      playAudio("https://www.sonidosmp3gratis.com/sounds/mario-bros%20game%20over.mp3", duration)
+    }
 
+    function stopAlarm() {
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        currentAudio = null;
+      }
+    }
     
-
-    // make container
-    
-    
+    // -------------------------------
 
     
 
@@ -89,6 +61,11 @@ if (window.__myTimerLoaded) {
         // const url = runtime.runtime.getURL("tmos.json");
         // const response = await fetch(url);
         // return await response.json();
+        
+        // const response = await fetch("https://everisgroup-my.sharepoint.com/:u:/g/personal/lsalcedg_emeal_nttdata_com/EcdQ9EKUGU5PucRTQjfrcQgBFAtIwSqkGUFaMdFqYUJRtQ?e=En4ttd");
+        // const  data = await response.json();
+        // console.log(data);
+        
         return tmos
       } catch (error) {
         console.error("Error cargando tmos.json:", error);
@@ -143,8 +120,8 @@ if (window.__myTimerLoaded) {
       return endTime;
     }
 
-    function isPastLimit(diff) {
-      return diff <= currentLimit * 60 * 1000;
+    function isWarningTime(diff) {
+      return diff <= currentLimit * 60 * 1000 && diff > 0;
     }
 
     function getDiff(endTime) {
@@ -152,6 +129,11 @@ if (window.__myTimerLoaded) {
     }
 
     async function loadTimer() {
+        // reset alarm
+        alarmPlayed = false;
+        stopAlarm();
+
+
         // restore color   
         const timeData = await getTimerData();
         if (!timeData) return;
@@ -178,30 +160,39 @@ if (window.__myTimerLoaded) {
         timer = setInterval(() => {
             const diff = getDiff(endTime);
 
-            if (isPastLimit(diff)) divTimerContent.style.color = "RED";
+            if (isWarningTime(diff) && !alarmPlayed) {
+              alarmPlayed = true;
+              divTimerContent.style.color = "RED";
+              playAlarm1(11000); // sound
+            }
 
             if (diff <= 0) {
             divTimerContent.innerText = "00:00:00";
             divTimerContent.style.color = "GRAY";
             clearInterval(timer);
-            //   beep(3000); // sound
-            //   playSound(3000); 
-            //   notifySound();
+            playAlarm2(4000); // sound
             console.log("timer off");
             return;
             }
 
             divTimerContent.innerText = timeFormat(diff);
             // automatic close 00:00:00
-            if(!getCurrentState()) loadTimer();
+            if(!getCurrentState()){ 
+              alarmPlayed = false;
+              loadTimer();
+            }
 
         }, 1000);
     }
 
     //btn refresh    
-    btnRefreshTimer.addEventListener('click', loadTimer)
+    btnRefreshTimer.addEventListener('click', async () => {
+      stopAlarm();
+      clearInterval(timer);
+      await loadTimer();
+    })
     divHeader.append(btnRefreshTimer)
 
-    await loadTimer();
+    // await loadTimer();
   })();
 }
