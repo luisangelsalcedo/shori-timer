@@ -63,9 +63,18 @@ svgalarm.addEventListener('click', ()=>{
 
 
 export const btnRefreshTimer = document.createElement("button");
-btnRefreshTimer.innerText = "Reload";
+btnRefreshTimer.innerHTML = imageTimer + "<span>Timer</span>";
 btnRefreshTimer.style.color = "white";
-btnRefreshTimer.style.padding = "5px";
+btnRefreshTimer.style.backgroundColor = "#333";
+btnRefreshTimer.style.padding = "8px 15px";
+btnRefreshTimer.style.marginLeft = "15px";
+btnRefreshTimer.style.borderRadius = "8px";
+btnRefreshTimer.style.display = "flex";
+btnRefreshTimer.style.alignItems = "center";
+btnRefreshTimer.style.justifyContent = "center";
+btnRefreshTimer.style.gap = "10px";
 
+const timericononbtn = btnRefreshTimer.querySelector("svg");
+timericononbtn.querySelector("path").style.fill = "white"
 
 
