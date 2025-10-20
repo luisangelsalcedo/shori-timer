@@ -4,6 +4,7 @@
   "version": "1.0",
   "description": "Muestra un temporizador al hacer clic en el icono",
   "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
   "icons": {
     "128": "icon.png"
   },
@@ -16,10 +17,8 @@
   "background": {
     "service_worker": "background.js"
   },
-  "web_accessible_resources": [
-    {
-      "resources": ["alarma.mp3"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  "web_accessible_resources": [{
+    "resources": ["sounds/pre-alarm.mp3", "sounds/alarm.mp3"],
+    "matches": ["<all_urls>"]
+  }]
 }

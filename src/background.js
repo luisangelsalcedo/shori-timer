@@ -1,4 +1,29 @@
-// Ejecutar content.js al hacer click en el icono
+// send messages
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+
+    if (!message || typeof message.type !== 'string') {
+        sendResponse({ ok: false, error: 'mensaje inválido' });
+        return;
+    }
+
+    switch (message.type) {
+        case 'GET_TMOS': {
+            (async ()=>{
+                try {
+                    const resp = await fetch('tmos.json');
+                    const data = await resp.json();
+                    sendResponse({ ok: true, data });
+
+                } catch (err) {
+                    sendResponse({ ok: false, error: String(err) });
+                }
+            })();
+            return true;
+        } 
+    }
+});
+
+// run extension
 chrome.action.onClicked.addListener((tab) => {
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
@@ -6,32 +31,3 @@ chrome.action.onClicked.addListener((tab) => {
   });
 });
 
-// // Escuchar mensajes desde content.js para reproducir sonido
-// chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
-//   if (msg.action === "playSound") {
-//     const url = chrome.runtime.getURL("alarma.mp3");
-//     const audio = new Audio(url);
-//     audio.play().catch(err => console.error("Error al reproducir audio:", err));
-
-//     // detener automáticamente después de X ms (default 3 segundos)
-//     setTimeout(() => {
-//       audio.pause();
-//       audio.currentTime = 0;
-//     }, msg.duration || 3000);
-//   }
-// });
-
-
-
-
-/* 
-manifest
-,
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ]
-
-*/
