@@ -1,3 +1,8 @@
+//* TODO Quitar espacios a los TMO labels
+// TODO bajar volumen de los audios
+// TODO cambiar audios
+// TODO Documentacion (work) agregar el detalle del boton para silenciar el audio
+
 
 import { $, timeFormat } from "./utils";
 import { divTimer, divTimerContent, divTimerBottom , btnRefreshTimer, svgtime, svgalarm } from "./elements";
@@ -65,7 +70,15 @@ if (window.__myTimerLoaded) {
       const allStates = await getAllStates();
       if (!allStates) return 0;
 
-      const stateObj = allStates.find(state => state.label === currentState);
+      const stateObj = allStates.find(state => {
+        const labelTrim = state.label.trim().toUpperCase();
+        const currenStateTrim = currentState.trim().toUpperCase();
+
+         return labelTrim === currenStateTrim
+      });
+
+
+        
       return stateObj ? stateObj.tmo : 0;
     }
 
@@ -175,7 +188,7 @@ if (window.__myTimerLoaded) {
       await loadTimer();
     })
 
-    
+
     divHeader.append(btnRefreshTimer);
   })();
 }
