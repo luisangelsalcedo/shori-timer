@@ -174,17 +174,8 @@ if (window.__myTimerLoaded) {
       }
       await loadTimer();
     })
-    divHeader.append(btnRefreshTimer)
 
-
-    const target = document.querySelector("#root");
-    const observer = new MutationObserver(function (mutations) {
-      mutations.forEach(function ({mutation}) {
-        console.log(mutation);
-      });
-    });
-    const config = { attributes: true, childList: true, characterData: true };
-    if(target) observer.observe(target, config);
-
+    
+    divHeader.append(btnRefreshTimer);
   })();
 }
