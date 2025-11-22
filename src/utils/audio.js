@@ -89,7 +89,8 @@ export async function playAudio(url, duration = 3000) {
 
   currentAudio = new Audio(url);
   currentAudio.preload = 'auto';
-  currentAudio.volume = 1;
+  currentAudio.volume = 0.07;
+  currentAudio.autoplay = false;
 
   try {
     await currentAudio.play();

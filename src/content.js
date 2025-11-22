@@ -1,5 +1,5 @@
 //* TODO Quitar espacios a los TMO labels
-// TODO bajar volumen de los audios
+//* TODO bajar volumen de los audios
 // TODO cambiar audios
 // TODO Documentacion (work) agregar el detalle del boton para silenciar el audio
 
