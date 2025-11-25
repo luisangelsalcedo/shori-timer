@@ -1,6 +1,7 @@
 //* TODO Quitar espacios a los TMO labels
 //* TODO bajar volumen de los audios
-// TODO cambiar audios
+//* TODO cambiar audios 1
+// TODO cambiar audios 2
 // TODO Documentacion (work) agregar el detalle del boton para silenciar el audio
 
 
@@ -26,7 +27,7 @@ if (window.__myTimerLoaded) {
     // -------------------------------
     unlockAudioOnFirstGesture();
 
-    function playAlarm1(duration = 3000) {
+    function playAlarm1(duration = 15000) {
       playAudio(prealarm, duration);
     }
 
@@ -153,7 +154,7 @@ if (window.__myTimerLoaded) {
             if (isWarningTime(diff) && !alarmPlayed) {
               alarmPlayed = true;
               divTimerContent.style.color = "RED";
-              playAlarm1(11000); // sound
+              playAlarm1(30000); // sound
               svgalarm.style.display = 'block'
               svgtime.style.display = 'none'
             }
