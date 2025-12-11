@@ -37,9 +37,9 @@ if (window.__myTimerLoaded) {
     // -------------------------------
 
     
-    const divHeader = $(".css-9x4cwg");
+    const divHeader = $(".main_navbar > div > div > div");
     if (!divHeader) {
-      console.warn("No se encontró .css-9x4cwg en esta página");
+      console.warn("No se encontró .main_navbar en esta página");
       return; // salir si no existe
     }
     divHeader.append(divTimer);
