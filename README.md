@@ -15,7 +15,7 @@ Navegador basado en Chromium
 
 ## Descarga
 Para hacer uso de esta extensión, deberás descargar y descomprimir el siguiente archivo:<br/>
-<a href="./download/reloj-shori.zip?raw=true" target="_blank">reloj-shori.zip</a>
+<a href="./download/timer-shori.zip?raw=true" target="_blank">timer-shori.zip</a>
 
 ## Instalación rápida
 

@@ -189,7 +189,6 @@ if (window.__myTimerLoaded) {
       await loadTimer();
     })
 
-
     divHeader.append(btnRefreshTimer);
   })();
 }

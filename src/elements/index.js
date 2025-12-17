@@ -73,8 +73,21 @@ btnRefreshTimer.style.display = "flex";
 btnRefreshTimer.style.alignItems = "center";
 btnRefreshTimer.style.justifyContent = "center";
 btnRefreshTimer.style.gap = "10px";
+btnRefreshTimer.style.zIndex = "10";
 
 const timericononbtn = btnRefreshTimer.querySelector("svg");
 timericononbtn.querySelector("path").style.fill = "white"
 
 
+
+// media queries
+const smMediaQuery = window.matchMedia("(max-width: 768px)");
+const handleMediaChange = (e)=>{
+    if(e.matches){
+        btnRefreshTimer.style.backgroundColor = "red";
+    } else{
+        btnRefreshTimer.style.backgroundColor = "#333";
+    }
+}
+handleMediaChange(smMediaQuery)
+smMediaQuery.addEventListener("change", handleMediaChange);
