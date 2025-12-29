@@ -1,5 +1,91 @@
 body {
-  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+.timer {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  font-size: 1.5em;
+}
+@media (min-width: 500px) {
+  .timer {
+    position: absolute;
+    inset: auto;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    right: 1em;
+    padding: 0.5em 1em;
+    border-radius: 0 0 8px 8px;
+    font-size: 0.9em;
+  }
+}
+.timer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.timer-content-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.timer-content-top span {
+  color: blue;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.timer-content-bottom {
+  text-align: center;
+}
+.timer-content-bottom span {
+  color: #333;
+  font-size: 0.8em;
+}
+.timer-btn {
+  color: white;
+  background-color: #333;
+  padding: 8px 15px;
+  margin-left: 15px;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+}
+.timer-btn svg path {
+  fill: white;
+}
+
+.timer-icon {
+  width: 1.4em;
+  height: 1.4em;
+}
+.timer-icon path {
+  fill: #005b96;
+}
+
+.alarm-icon {
+  width: 1.4em;
+  height: 1.4em;
+  cursor: pointer;
+}
+.alarm-icon path {
+  fill: #960000;
 }
 
 /*# sourceMappingURL=timer-styles.css.map */

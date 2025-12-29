@@ -6,7 +6,7 @@
 
 
 import { $, timeFormat } from "./utils";
-import { divTimer, divTimerContent, divTimerBottom , btnRefreshTimer, svgtime, svgalarm } from "./elements";
+import { divTimer, timerDigits, timerData , btnRefreshTimer, svgtime, svgalarm } from "./elements";
 import { stopAlarm, unlockAudioOnFirstGesture, playAudio } from "./utils/audio";
 
 if (window.__myTimerLoaded) {
@@ -22,7 +22,6 @@ if (window.__myTimerLoaded) {
     const prealarm = chrome.runtime.getURL('sounds/pre-alarm.mp3');
     const alarm = chrome.runtime.getURL('sounds/alarm.mp3');
 
-    divTimer.append(divTimerBottom);
     
     // -------------------------------
     unlockAudioOnFirstGesture();
@@ -43,6 +42,16 @@ if (window.__myTimerLoaded) {
       return; // salir si no existe
     }
     divHeader.append(divTimer);
+
+
+
+    const styles = chrome.runtime.getURL('timer-styles.css');
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = styles;
+    document.head.append(link);
+
+
 
     async function getAllStates() {
       return new Promise((resolve, reject)=>{
@@ -132,9 +141,9 @@ if (window.__myTimerLoaded) {
         
         const endTime = calculateEndTime(timeData);
         // HTML
-        divTimerContent.style.color = "BLUE";
-        divTimer.style.display = "block";
-        divTimerBottom.innerText = timeData.tmo ? `End: ${endTime.toLocaleTimeString()}` : "";
+        timerDigits.style.color = "BLUE";
+        divTimer.style.display = "flex";
+        timerData.innerText = timeData.tmo ? `End: ${endTime.toLocaleTimeString()}` : "";
 
         // limpiar timer previo
         if (timer) {
@@ -143,7 +152,7 @@ if (window.__myTimerLoaded) {
         }
 
         if (getDiff(endTime) <= 0) {
-            divTimerContent.innerText = "00:00:00";
+            timerDigits.innerText = "00:00:00";
             divTimer.style.display = "none";
             return;
         }
@@ -153,15 +162,15 @@ if (window.__myTimerLoaded) {
 
             if (isWarningTime(diff) && !alarmPlayed) {
               alarmPlayed = true;
-              divTimerContent.style.color = "RED";
+              timerDigits.style.color = "RED";
               playAlarm1(30000); // sound
               svgalarm.style.display = 'block'
               svgtime.style.display = 'none'
             }
 
             if (diff <= 0) {
-            divTimerContent.innerText = "00:00:00";
-            divTimerContent.style.color = "GRAY";
+            timerDigits.innerText = "00:00:00";
+            timerDigits.style.color = "GRAY";
             clearInterval(timer);
             playAlarm2(4000); // sound
             
@@ -169,7 +178,7 @@ if (window.__myTimerLoaded) {
             return;
             }
 
-            divTimerContent.innerText = timeFormat(diff);
+            timerDigits.innerText = timeFormat(diff);
             // automatic close 00:00:00
             if(!getCurrentState()){ 
               alarmPlayed = false;
