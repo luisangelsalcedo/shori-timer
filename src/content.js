@@ -67,7 +67,8 @@ if (window.__myTimerLoaded) {
 
     function getCurrentState() {
       try {
-        const div = $(".css-1d6wgrc .css-gab2yv");
+        const div = $(".css-1d6wgrc .css-vds986");
+       
         return div ? div.innerText : null;
       } catch {
         return null;
@@ -84,7 +85,7 @@ if (window.__myTimerLoaded) {
         const labelTrim = state.label.trim().toUpperCase();
         const currenStateTrim = currentState.trim().toUpperCase();
 
-         return labelTrim === currenStateTrim
+        return labelTrim === currenStateTrim
       });
 
 
