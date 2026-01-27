@@ -133,6 +133,9 @@ if (window.__myTimerLoaded) {
         // reset alarm
         alarmPlayed = false;
         stopAlarm();
+        svgalarm.style.display = 'none'
+        svgtime.style.display = 'block'
+
 
 
         // restore color   
