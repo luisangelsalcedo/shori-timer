@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./src/assets/scss/timer-styles.scss:./public/timer-styles.css"
+    "sass": "sass --watch ./src/assets/scss/timer-styles.scss:./public/timer-styles.css",
+    "zip": "bestzip ./download/timer-shori.zip dist/*"
   },
   "author": "Luis Angel Salcedo Gavidia",
   "license": "ISC",
