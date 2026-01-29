@@ -77,9 +77,15 @@ if (window.__myTimerLoaded) {
 
     async function getTMO() {
       const currentState = getCurrentState();
-      if (!currentState) return 0;
+      if (!currentState) {
+        console.error("Error cargando el estado de Shori");
+        return 0;
+      }
       const allStates = await getAllStates();
-      if (!allStates) return 0;
+      if (!allStates) {
+        console.error("Error cargando la lista de TMOS");
+        return 0;
+      }
 
       const stateObj = allStates.find(state => {
         const labelTrim = state.label.trim().toUpperCase();
@@ -88,7 +94,7 @@ if (window.__myTimerLoaded) {
         return labelTrim === currenStateTrim
       });
 
-
+      if(!stateObj) console.error("No coincide el TMO con la lista");
         
       return stateObj ? stateObj.tmo : 0;
     }
@@ -109,6 +115,7 @@ if (window.__myTimerLoaded) {
 
         return { tmo, currentState, allStates, ticket, createTime, updateTime };
       } catch {
+        if(!stateObj) console.error("Error cargando los tiempos de Shori");
         return null;
       }
     }
