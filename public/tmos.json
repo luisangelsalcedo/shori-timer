@@ -1,54 +1,266 @@
 [
-     {
-        "label" : "Generar Informe MKT y Expenses", 
-        "tmo" : 40
+    {
+        "label": "Auditar Motivo del Credit",
+        "tmo": 20.0
     },
     {
-        "label" : "Generar Informe ARQ Demandas", 
-        "tmo" : 40
+        "label": "Factura con Error",
+        "tmo": 10.0
     },
     {
-        "label" : "Extraer REAL vs FCST", 
-        "tmo" : 20
+        "label": "Factura Correcta",
+        "tmo": 4.0
     },
     {
-        "label" : "Generar Informe Billing & Collection", 
-        "tmo" : 40
+        "label": "Inicio",
+        "tmo": 0.5
     },
     {
-        "label" : "Atender Consulta (Mail-Call-Chat)      ", 
-        "tmo" : 30
+        "label": "Cargar Factura",
+        "tmo": 3.0
     },
     {
-        "label" : "Reunión de Seguimiento con Oficina", 
-        "tmo" : 30
+        "label": "Cargar Facturas por Fichero",
+        "tmo": 60.0
     },
     {
-        "label" : "Actualizar Plan de Facturación", 
-        "tmo" : 15
+        "label": "Descargar Factura",
+        "tmo": 3.0
     },
     {
-        "label" : "Generar Evento & Correo Complejo", 
-        "tmo" : 40
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 30.0
     },
     {
-        "label" : "Generar Evento & Correo Simple", 
-        "tmo" : 20
+        "label": "Extraer Facturas en AP",
+        "tmo": 20.0
     },
     {
-        "label" : "Validar y Archivar PDF", 
-        "tmo" : 10
+        "label": "Reporte de Facturación",
+        "tmo": 30.0
     },
     {
-        "label" : "Generar Informe Pending Collection", 
-        "tmo" : 40
+        "label": "Reunión de Seguimiento con Oficina",
+        "tmo": 60.0
     },
     {
-        "label" : "Actualizar SOW", 
-        "tmo" : 20
+        "label": "Enviar Facturas a Cliente",
+        "tmo": 60.0
     },
     {
-        "label" : "Inicio", 
-        "tmo" : 0.5
+        "label": "Completar Factura / Credit",
+        "tmo": 8.0
+    },
+    {
+        "label": "Completar Facturar por Base",
+        "tmo": 60.0
+    },
+    {
+        "label": "Modificar PDF (Descripción / Anexo)",
+        "tmo": 20.0
+    },
+    {
+        "label": "Seguimiento (L2/L3/Ampliación/Incidencia)",
+        "tmo": 15.0
+    },
+    {
+        "label": "Asignación / Etiqueta de correo",
+        "tmo": 30.0
+    },
+    {
+        "label": "Gestionar Correos Categorizado",
+        "tmo": 30.0
+    },
+    {
+        "label": "Actualizar Facturas Pendientes",
+        "tmo": 30.0
+    },
+    {
+        "label": "Enviar Facturas a Cliente",
+        "tmo": 30.0
+    },
+    {
+        "label": "Validar Tarjeta CSC",
+        "tmo": 30.0
+    },
+    {
+        "label": "Correo + Factura + Incidencia + Subir Factura",
+        "tmo": 30.0
+    },
+    {
+        "label": "Atender Buzón CSC.Customer.Letters",
+        "tmo": 15.0
+    },
+    {
+        "label": "Consultar con Oficina",
+        "tmo": 20.0
+    },
+    {
+        "label": "Generar Carta - Cliente / Proveedor",
+        "tmo": 30.0
+    },
+    {
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "label": "Crear Anexo",
+        "tmo": 10.0
+    },
+    {
+        "label": "Actualizar el Billing Number",
+        "tmo": 4.0
+    },
+    {
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 10.0
+    },
+    {
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 15.0
+    },
+    {
+        "label": "Enviar Facturas a Cliente",
+        "tmo": 10.0
+    },
+    {
+        "label": "Factura Observada",
+        "tmo": 12.0
+    },
+    {
+        "label": "Generar Factura & Actualizar Staff",
+        "tmo": 10.0
+    },
+    {
+        "label": "Generar Evento Consolidado",
+        "tmo": 10.0
+    },
+    {
+        "label": "Generar Evento Individual",
+        "tmo": 7.0
+    },
+    {
+        "label": "Crear Eventos con Robot OneERP",
+        "tmo": 30.0
+    },
+    {
+        "label": "Preparar Plantilla y Validar Proyecto",
+        "tmo": 25.0
+    },
+    {
+        "label": "Atender Buzón FxTrade.Confirmation",
+        "tmo": 15.0
+    },
+    {
+        "label": "Monitorizar Buzón FxTrade.Confirmation",
+        "tmo": 10.0
+    },
+    {
+        "label": "Reportar Incidencia con Oficina",
+        "tmo": 15.0
+    },
+    {
+        "label": "Facturas Adquira",
+        "tmo": 13.0
+    },
+    {
+        "label": "Facturas TGS",
+        "tmo": 13.0
+    },
+    {
+        "label": "Reporte TGS - Adquira",
+        "tmo": 10.0
+    },
+    {
+        "label": "Descarga Pedidos BBVA",
+        "tmo": 10.0
+    },
+    {
+        "label": "Pedidos BBVA",
+        "tmo": 8.0
+    },
+    {
+        "label": "Propuestas BBVA",
+        "tmo": 10.0
+    },
+    {
+        "label": "Reporte Diario",
+        "tmo": 15.0
+    },
+    {
+        "label": "Reporte TGS - Volcadura",
+        "tmo": 30.0
+    },
+    {
+        "label": "Finalizar Soporte",
+        "tmo": 60.0
+    },
+    {
+        "label": "Generar Informe MKT y Expenses",
+        "tmo": 40.0
+    },
+    {
+        "label": "Generar Informe ARQ Demandas",
+        "tmo": 40.0
+    },
+    {
+        "label": "Extraer REAL vs FCST",
+        "tmo": 20.0
+    },
+    {
+        "label": "Generar Informe Billing & Collection",
+        "tmo": 40.0
+    },
+    {
+        "label": "Reunión de Seguimiento con Oficina",
+        "tmo": 30.0
+    },
+    {
+        "label": "Generar Evento & Correo Complejo",
+        "tmo": 40.0
+    },
+    {
+        "label": "Generar Evento & Correo Simple",
+        "tmo": 20.0
+    },
+    {
+        "label": "Validar y Archivar PDF",
+        "tmo": 10.0
+    },
+    {
+        "label": "Generar Informe Pending Collection",
+        "tmo": 40.0
+    },
+    {
+        "label": "Actualizar SOW",
+        "tmo": 20.0
     }
 ]
