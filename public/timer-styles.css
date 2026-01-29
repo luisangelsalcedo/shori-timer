@@ -16,7 +16,7 @@ body {
   inset: 0;
   font-size: 1.5em;
 }
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   .timer {
     position: absolute;
     inset: auto;
