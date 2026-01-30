@@ -1,266 +1,1577 @@
 [
     {
+        "product": "Auditoria Interna",
         "label": "Auditar Motivo del Credit",
         "tmo": 20.0
     },
     {
+        "product": "Auditoria Interna",
         "label": "Factura con Error",
         "tmo": 10.0
     },
     {
+        "product": "Auditoria Interna",
         "label": "Factura Correcta",
         "tmo": 4.0
     },
     {
+        "product": "Auditoria Interna",
         "label": "Inicio",
         "tmo": 0.5
     },
     {
+        "product": "Carga y Descarga de Facturas",
         "label": "Cargar Factura",
         "tmo": 3.0
     },
     {
+        "product": "Carga y Descarga de Facturas",
         "label": "Cargar Facturas por Fichero",
         "tmo": 60.0
     },
     {
+        "product": "Carga y Descarga de Facturas",
         "label": "Descargar Factura",
         "tmo": 3.0
     },
     {
+        "product": "Control de Facturación",
         "label": "Atender Consulta (Mail-Call-Chat)",
         "tmo": 30.0
     },
     {
+        "product": "Control de Facturación",
         "label": "Extraer Facturas en AP",
         "tmo": 20.0
     },
     {
+        "product": "Control de Facturación",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Control de Facturación",
         "label": "Reporte de Facturación",
         "tmo": 30.0
     },
     {
+        "product": "Control de Facturación",
         "label": "Reunión de Seguimiento con Oficina",
         "tmo": 60.0
     },
     {
+        "product": "Envío de Factura a Cliente",
         "label": "Enviar Facturas a Cliente",
         "tmo": 60.0
     },
     {
+        "product": "Envío de Factura a Cliente",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación por Línea",
         "label": "Completar Factura / Credit",
         "tmo": 8.0
     },
     {
+        "product": "Facturación por Línea",
         "label": "Completar Facturar por Base",
         "tmo": 60.0
     },
     {
+        "product": "Facturación por Línea",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación por Línea",
         "label": "Modificar PDF (Descripción / Anexo)",
         "tmo": 20.0
     },
     {
+        "product": "Facturación por Línea",
         "label": "Seguimiento (L2/L3/Ampliación/Incidencia)",
         "tmo": 15.0
     },
     {
+        "product": "Gestión Buzón Spain Billing Support",
         "label": "Asignación / Etiqueta de correo",
         "tmo": 30.0
     },
     {
+        "product": "Gestión Buzón Spain Billing Support",
         "label": "Gestionar Correos Categorizado",
         "tmo": 30.0
     },
     {
+        "product": "Gestión Buzón Spain Billing Support",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Gestión de Tarjetas CSC",
         "label": "Actualizar Facturas Pendientes",
         "tmo": 30.0
     },
     {
+        "product": "Gestión de Tarjetas CSC",
         "label": "Enviar Facturas a Cliente",
         "tmo": 30.0
     },
     {
+        "product": "Gestión de Tarjetas CSC",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Gestión de Tarjetas CSC",
         "label": "Validar Tarjeta CSC",
         "tmo": 30.0
     },
     {
+        "product": "Gestión Fino",
         "label": "Correo + Factura + Incidencia + Subir Factura",
         "tmo": 30.0
     },
     {
+        "product": "Gestión Fino",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Gestión UTES",
+        "label": "Correo + Factura + Incidencia + Subir Factura",
+        "tmo": 30.0
+    },
+    {
+        "product": "Gestión UTES",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Carga y Descarga de Facturas",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Customer Letters-Cliente",
         "label": "Atender Buzón CSC.Customer.Letters",
         "tmo": 15.0
     },
     {
+        "product": "Customer Letters-Cliente",
         "label": "Consultar con Oficina",
         "tmo": 20.0
     },
     {
+        "product": "Customer Letters-Cliente",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Generación de Cartas - Clientes / Proveedores",
         "label": "Generar Carta - Cliente / Proveedor",
         "tmo": 30.0
     },
     {
+        "product": "Generación de Cartas - Clientes / Proveedores",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Supplier Letters-Proveedor",
+        "label": "Atender Buzón CSC.Customer.Letters",
+        "tmo": 15.0
+    },
+    {
+        "product": "Supplier Letters-Proveedor",
+        "label": "Consultar con Oficina",
+        "tmo": 20.0
+    },
+    {
+        "product": "Supplier Letters-Proveedor",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - AXA",
         "label": "Actualizar Plan de Facturación",
         "tmo": 15.0
     },
     {
+        "product": "Facturación - AXA",
         "label": "Atender Consulta (Mail-Call-Chat)",
         "tmo": 20.0
     },
     {
+        "product": "Facturación - AXA",
         "label": "Generar Credit",
         "tmo": 15.0
     },
     {
+        "product": "Facturación - AXA",
         "label": "Generar Evento Consolidado",
         "tmo": 20.0
     },
     {
+        "product": "Facturación - AXA",
         "label": "Generar Evento Individual",
         "tmo": 12.0
     },
     {
+        "product": "Facturación - AXA",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - AXA",
         "label": "Reporte",
         "tmo": 30.0
     },
     {
+        "product": "Facturación - AXA",
         "label": "Solicitar Funding y Acceso",
         "tmo": 6.0
     },
     {
+        "product": "Facturación - AXA",
         "label": "Validar y Archivar PDF",
         "tmo": 5.0
     },
     {
+        "product": "Facturación - BBVA",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - BBVA",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - BBVA",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - BBVA",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - BBVA",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - BMW",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - BMW",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - BMW",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - BMW",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - BMW",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - BMW",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - BMW",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - BMW",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - BMW",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - BMW Alemania",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - BMW Alemania",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - BMW Alemania",
         "label": "Crear Anexo",
         "tmo": 10.0
     },
     {
+        "product": "Facturación - BMW Alemania",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - BMW Alemania",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - BMW Alemania",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - BMW Alemania",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - BMW Alemania",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - BMW Alemania",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - BMW Alemania",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - CAIXABANK",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - CAIXABANK",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - CAIXABANK",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - CAIXABANK",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - CAIXABANK",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - CAIXABANK",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - CAIXABANK",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - CAIXABANK",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - CAIXABANK",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - CAMPOFRIO",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - CAMPOFRIO",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - CAMPOFRIO",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - CAMPOFRIO",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - CAMPOFRIO",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - CAMPOFRIO",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - CAMPOFRIO",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - CAMPOFRIO",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - CAMPOFRIO",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - DIGITTMII (Benelux)",
         "label": "Actualizar el Billing Number",
         "tmo": 4.0
     },
     {
+        "product": "Facturación - DIGITTMII (Benelux)",
         "label": "Actualizar Plan de Facturación",
         "tmo": 10.0
     },
     {
+        "product": "Facturación - DIGITTMII (Benelux)",
         "label": "Atender Consulta (Mail-Call-Chat)",
         "tmo": 15.0
     },
     {
-        "label": "Enviar Facturas a Cliente",
+        "product": "Facturación - DIGITTMII (Benelux)",
+        "label": "Enviar Factura a Cliente",
         "tmo": 10.0
     },
     {
+        "product": "Facturación - DIGITTMII (Benelux)",
         "label": "Factura Observada",
         "tmo": 12.0
     },
     {
+        "product": "Facturación - DIGITTMII (Benelux)",
         "label": "Generar Factura & Actualizar Staff",
         "tmo": 10.0
     },
     {
+        "product": "Facturación - DIGITTMII (Benelux)",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - EU LISA (Benelux)",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - EU LISA (Benelux)",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - EU LISA (Benelux)",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - EU LISA (Benelux)",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - EU LISA (Benelux)",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - EU LISA (Benelux)",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - EU LISA (Benelux)",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - EU LISA (Benelux)",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - EU LISA (Benelux)",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - IBERCAJA",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - IBERCAJA",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - IBERCAJA",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - IBERCAJA",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - IBERCAJA",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - IBERCAJA",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - IBERCAJA",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - IBERCAJA",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - IBERCAJA",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - IBERDROLA",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - IBERDROLA",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - IBERDROLA",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - IBERDROLA",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - IBERDROLA",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - IBERDROLA",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - IBERDROLA",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - IBERDROLA",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - IBERDROLA",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - ILUNION",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - ILUNION",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - ILUNION",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - ILUNION",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - ILUNION",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - ILUNION",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - ILUNION",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - ILUNION",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - ILUNION",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - IT NOW",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - IT NOW",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - IT NOW",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - IT NOW",
         "label": "Generar Evento Consolidado",
         "tmo": 10.0
     },
     {
+        "product": "Facturación - IT NOW",
         "label": "Generar Evento Individual",
         "tmo": 7.0
     },
     {
+        "product": "Facturación - IT NOW",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - IT NOW",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - IT NOW",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - IT NOW",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - MAHOU",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - MAHOU",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - MAHOU",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - MAHOU",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - MAHOU",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - MAHOU",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - MAHOU",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - MAHOU",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - MAHOU",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - MAS MOVIL",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - MAS MOVIL",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - MAS MOVIL",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - MAS MOVIL",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - MAS MOVIL",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - MAS MOVIL",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - MAS MOVIL",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - MAS MOVIL",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - MAS MOVIL",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - MEDIOLANUM",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - MEDIOLANUM",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - MEDIOLANUM",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - MEDIOLANUM",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - MEDIOLANUM",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - MEDIOLANUM",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - MEDIOLANUM",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - MEDIOLANUM",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - MEDIOLANUM",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - NATURGY LEAN",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - NATURGY LEAN",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - NATURGY LEAN",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - NATURGY LEAN",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - NATURGY LEAN",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - NATURGY LEAN",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - NATURGY LEAN",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - NATURGY LEAN",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - NATURGY LEAN",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - ODIGEO",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - ODIGEO",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - ODIGEO",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - ODIGEO",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - ODIGEO",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - ODIGEO",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - ODIGEO",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - ODIGEO",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - ODIGEO",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - ORANGE",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - ORANGE",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - ORANGE",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - ORANGE",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - ORANGE",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - ORANGE",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - ORANGE",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - ORANGE",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - ORANGE",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - SABA",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - SABA",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - SABA",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - SABA",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - SABA",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - SABA",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - SABA",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - SABA",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - SABA",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - SABADELL",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - SABADELL",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - SABADELL",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - SABADELL",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - SABADELL",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - SABADELL",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - SABADELL",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - SABADELL",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - SABADELL",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - SANTA LUCIA",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - SANTA LUCIA",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - SANTA LUCIA",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - SANTA LUCIA",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - SANTA LUCIA",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - SANTA LUCIA",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - SANTA LUCIA",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - SANTA LUCIA",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - SANTA LUCIA",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - SERUNION",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - SERUNION",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - SERUNION",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - SERUNION",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - SERUNION",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - SERUNION",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - SERUNION",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - SERUNION",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - SERUNION",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - TELEFONICA",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - TELEFONICA",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - TELEFONICA",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - TELEFONICA",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - TELEFONICA",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - TELEFONICA",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - TELEFONICA",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - TELEFONICA",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - TELEFONICA",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Generación de Evento - Santander",
         "label": "Crear Eventos con Robot OneERP",
         "tmo": 30.0
     },
     {
+        "product": "Generación de Evento - Santander",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Generación de Evento - Santander",
         "label": "Preparar Plantilla y Validar Proyecto",
         "tmo": 25.0
     },
     {
+        "product": "REPORTE DE FACTURACION",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "REPORTE DE FACTURACION",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - UNICAJA",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - UNICAJA",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - UNICAJA",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - UNICAJA",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - UNICAJA",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - UNICAJA",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - UNICAJA",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - UNICAJA",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - UNICAJA",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "Facturación - WIPO (Benelux)",
+        "label": "Actualizar el Billing Number",
+        "tmo": 4.0
+    },
+    {
+        "product": "Facturación - WIPO (Benelux)",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 10.0
+    },
+    {
+        "product": "Facturación - WIPO (Benelux)",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - WIPO (Benelux)",
+        "label": "Enviar Factura a Cliente",
+        "tmo": 10.0
+    },
+    {
+        "product": "Facturación - WIPO (Benelux)",
+        "label": "Factura Observada",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - WIPO (Benelux)",
+        "label": "Generar Factura & Actualizar Staff",
+        "tmo": 10.0
+    },
+    {
+        "product": "Facturación - WIPO (Benelux)",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - EPO (Benelux)",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - EPO (Benelux)",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - EPO (Benelux)",
+        "label": "Generar Credit",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - EPO (Benelux)",
+        "label": "Generar Evento Consolidado",
+        "tmo": 20.0
+    },
+    {
+        "product": "Facturación - EPO (Benelux)",
+        "label": "Generar Evento Individual",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - EPO (Benelux)",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - EPO (Benelux)",
+        "label": "Reporte",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - EPO (Benelux)",
+        "label": "Solicitar Funding y Acceso",
+        "tmo": 6.0
+    },
+    {
+        "product": "Facturación - EPO (Benelux)",
+        "label": "Validar y Archivar PDF",
+        "tmo": 5.0
+    },
+    {
+        "product": "FX Trades Reval",
         "label": "Atender Buzón FxTrade.Confirmation",
         "tmo": 15.0
     },
     {
+        "product": "FX Trades Reval",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "FX Trades Reval",
         "label": "Monitorizar Buzón FxTrade.Confirmation",
         "tmo": 10.0
     },
     {
+        "product": "FX Trades Reval",
         "label": "Reportar Incidencia con Oficina",
         "tmo": 15.0
     },
     {
+        "product": "Forecast",
         "label": "Facturas Adquira",
         "tmo": 13.0
     },
     {
+        "product": "Forecast",
         "label": "Facturas TGS",
         "tmo": 13.0
     },
     {
+        "product": "Forecast",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Forecast",
         "label": "Reporte TGS - Adquira",
         "tmo": 10.0
     },
     {
+        "product": "Propuesta & Pedidos BBVA",
         "label": "Descarga Pedidos BBVA",
         "tmo": 10.0
     },
     {
+        "product": "Propuesta & Pedidos BBVA",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Propuesta & Pedidos BBVA",
         "label": "Pedidos BBVA",
         "tmo": 8.0
     },
     {
+        "product": "Propuesta & Pedidos BBVA",
         "label": "Propuestas BBVA",
         "tmo": 10.0
     },
     {
+        "product": "Propuesta & Pedidos BBVA",
         "label": "Reporte Diario",
         "tmo": 15.0
     },
     {
+        "product": "Reporte TGS",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Reporte TGS",
         "label": "Reporte TGS - Volcadura",
         "tmo": 30.0
     },
     {
+        "product": "Apoyo a Terceros",
         "label": "Finalizar Soporte",
         "tmo": 60.0
     },
     {
+        "product": "Apoyo a Terceros",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Analisis MKT y Expenses",
         "label": "Generar Informe MKT y Expenses",
         "tmo": 40.0
     },
     {
+        "product": "Analisis MKT y Expenses",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "ARQ Demandas",
         "label": "Generar Informe ARQ Demandas",
         "tmo": 40.0
     },
     {
+        "product": "ARQ Demandas",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Billing & Collection",
         "label": "Extraer REAL vs FCST",
         "tmo": 20.0
     },
     {
+        "product": "Billing & Collection",
         "label": "Generar Informe Billing & Collection",
         "tmo": 40.0
     },
     {
+        "product": "Billing & Collection",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Control de Gestión",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 30.0
+    },
+    {
+        "product": "Control de Gestión",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Control de Gestión",
         "label": "Reunión de Seguimiento con Oficina",
         "tmo": 30.0
     },
     {
+        "product": "Facturación - ZURICH",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - ZURICH",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 30.0
+    },
+    {
+        "product": "Facturación - ZURICH",
         "label": "Generar Evento & Correo Complejo",
         "tmo": 40.0
     },
     {
+        "product": "Facturación - ZURICH",
         "label": "Generar Evento & Correo Simple",
         "tmo": 20.0
     },
     {
+        "product": "Facturación - ZURICH",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - ZURICH",
         "label": "Validar y Archivar PDF",
         "tmo": 10.0
     },
     {
+        "product": "Pendiente Cobro",
         "label": "Generar Informe Pending Collection",
         "tmo": 40.0
     },
     {
+        "product": "Pendiente Cobro",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "SOW",
         "label": "Actualizar SOW",
         "tmo": 20.0
+    },
+    {
+        "product": "SOW",
+        "label": "Inicio",
+        "tmo": 0.5
+    },
+    {
+        "product": "Facturación - JTI (Benelux)",
+        "label": "Actualizar el Billing Number",
+        "tmo": 4.0
+    },
+    {
+        "product": "Facturación - JTI (Benelux)",
+        "label": "Actualizar Plan de Facturación",
+        "tmo": 10.0
+    },
+    {
+        "product": "Facturación - JTI (Benelux)",
+        "label": "Atender Consulta (Mail-Call-Chat)",
+        "tmo": 15.0
+    },
+    {
+        "product": "Facturación - JTI (Benelux)",
+        "label": "Enviar Factura a Cliente",
+        "tmo": 10.0
+    },
+    {
+        "product": "Facturación - JTI (Benelux)",
+        "label": "Factura Observada",
+        "tmo": 12.0
+    },
+    {
+        "product": "Facturación - JTI (Benelux)",
+        "label": "Generar Factura & Actualizar Staff",
+        "tmo": 10.0
+    },
+    {
+        "product": "Facturación - JTI (Benelux)",
+        "label": "Inicio",
+        "tmo": 0.5
     }
 ]
