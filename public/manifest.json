@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Timer for Shori",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Muestra un temporizador al hacer clic en el icono",
   "permissions": ["scripting", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "icons": {
-    "128": "icon.png"
+    "128": "icon.png" 
   },
   "action": {
     "default_icon": {

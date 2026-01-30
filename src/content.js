@@ -59,39 +59,55 @@ if (window.__myTimerLoaded) {
           if(resp.ok) {
             resolve(resp.data);
           } else {
+            console.error("Error cargando la lista de TMOS");
             reject(resp.error)
           }
         });     
       })        
     }
 
+    function getCurrentProduct() {
+       try {
+        const div = $(".main_navbar + div > div > div > div:first-of-type p");
+        const texto = div.textContent;
+        const onlyProductText = texto.split(texto.split(" - ", 1)[0] + " - ")[1];
+       
+        return div ? onlyProductText.trim() : null;
+      } catch {
+        console.error("Error cargando el producto de Shori");
+        return null;
+      }
+    }
+
     function getCurrentState() {
       try {
         const div = $(".css-1d6wgrc .css-vds986");
        
-        return div ? div.innerText : null;
+        return div ? div.innerText.trim() : null;
       } catch {
+        console.error("Error cargando el estado de Shori");
         return null;
       }
     }
 
     async function getTMO() {
+      const currentProduct = getCurrentProduct();
       const currentState = getCurrentState();
-      if (!currentState) {
-        console.error("Error cargando el estado de Shori");
-        return 0;
-      }
       const allStates = await getAllStates();
-      if (!allStates) {
-        console.error("Error cargando la lista de TMOS");
-        return 0;
-      }
+      
+      if (!currentProduct || !currentState || !allStates) return 0;
 
       const stateObj = allStates.find(state => {
-        const labelTrim = state.label.trim().toUpperCase();
+        // producto
+        const procutTrim = state.product.toUpperCase();
+        const currenProductTrim = currentProduct.trim().toUpperCase();
+
+        // estado
+        const labelTrim = state.label.toUpperCase();
         const currenStateTrim = currentState.trim().toUpperCase();
 
-        return labelTrim === currenStateTrim
+        return  procutTrim === currenProductTrim && 
+                labelTrim === currenStateTrim
       });
 
       if(!stateObj) console.error("No coincide el TMO con la lista");
@@ -102,6 +118,7 @@ if (window.__myTimerLoaded) {
     async function getTimerData() {
       const tmo = await getTMO();
       const currentState = getCurrentState();
+      const currentProduct = getCurrentProduct();
       const allStates = await getAllStates();
 
       try {
@@ -113,7 +130,7 @@ if (window.__myTimerLoaded) {
         const createTime = divCreateDate ? divCreateDate.innerText.split(" ")[1] : "";
         const updateTime = divUpdateDate ? divUpdateDate.innerText.split(" ")[1] : "";
 
-        return { tmo, currentState, allStates, ticket, createTime, updateTime };
+        return { tmo, currentProduct, currentState, allStates, ticket, createTime, updateTime };
       } catch {
         if(!stateObj) console.error("Error cargando los tiempos de Shori");
         return null;
