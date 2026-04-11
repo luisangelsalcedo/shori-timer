@@ -68,7 +68,7 @@ body {
   z-index: 10;
 }
 .timer-btn svg path {
-  fill: white;
+  /*fill: white;*/
 }
 
 .timer-icon {
