@@ -41,3 +41,7 @@ Haga clic en el ícono de extensiones (figura de rompecabezas) ubicado junto a l
 ### PASO 6: Verificar la instalación
 Si la extensión se ha instalado correctamente, su ícono aparecerá fijado en la barra de herramientas del navegador, indicando que está lista para su uso.<br/><br/>
 ![paso6](./screenshots/paso%206.png)
+
+## 📄 Changelog
+
+See full change history in [CHANGELOG.md](./CHANGELOG.md)
