@@ -1,5 +1,9 @@
 # Changelog
 ---
+## [1.4.1] - 2026-04-15
+
+### Fixed
+- Patch to find the current status by Shori update
 
 ## [1.4.0] - 2026-02-02
 

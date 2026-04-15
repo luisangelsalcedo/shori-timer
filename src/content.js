@@ -81,7 +81,7 @@ if (window.__myTimerLoaded) {
 
     function getCurrentState() {
       try {
-        const div = $(".css-1d6wgrc .css-vds986");
+        const div = $(".css-rzuvm6 .css-17jrpv5");
        
         return div ? div.innerText.trim() : null;
       } catch {
@@ -200,7 +200,7 @@ if (window.__myTimerLoaded) {
             timerDigits.innerText = "00:00:00";
             timerDigits.style.color = "GRAY";
             clearInterval(timer);
-            playAlarm2(4000); // sound
+            playAlarm2(30000); // sound
             
             console.log("timer off");
             return;
@@ -223,6 +223,7 @@ if (window.__myTimerLoaded) {
         clearInterval(timer); 
         timer = null; 
       }
+      playAlarm1(1000);
       await loadTimer();
     })
 

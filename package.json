@@ -1,6 +1,6 @@
 {
   "name": "shori-timer",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Timer for shori tickets control",
   "type": "module",
   "scripts": {
